@@ -1,5 +1,11 @@
 package com.train.exception;
 
-public class InvalidCapacityException {
+public class InvalidCapacityException
+        extends Exception {
 
+    public InvalidCapacityException(
+            String message) {
+
+        super(message);
+    }
 }

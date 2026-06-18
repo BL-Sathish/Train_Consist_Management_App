@@ -1,5 +1,7 @@
 package com.train.model;
 
+import com.train.exception.InvalidCapacityException;
+
 public class PassengerBogie extends Bogie {
 
     private int capacity;
@@ -9,9 +11,19 @@ public class PassengerBogie extends Bogie {
             String bogieId,
             String bogieName,
             String type,
-            int capacity) {
+            int capacity)
+            throws InvalidCapacityException {
 
-        super(bogieId, bogieName);
+        super(
+                bogieId,
+                bogieName);
+
+        if (capacity <= 0) {
+
+            throw new InvalidCapacityException(
+                    "Capacity must be greater than zero");
+        }
+
         this.type = type;
         this.capacity = capacity;
     }
