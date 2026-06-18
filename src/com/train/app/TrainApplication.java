@@ -15,5 +15,11 @@ public class TrainApplication {
         new UC4LinkedListBogie().execute();
         
         new UC5LinkedHashSetBogie().execute();
+        
+        new UC6HashMapCapacity().execute();
+        new UC7ComparatorSorting().execute();
+        new UC8StreamFiltering().execute();
+        new UC9GroupingBy().execute();
+        new UC10ReduceTotalSeats().execute();
     }
 }
