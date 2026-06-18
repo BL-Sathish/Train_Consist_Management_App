@@ -8,6 +8,6 @@ public class TrainApplication {
 
         new UC1InitializeTrain().execute();
 
-        
+        new UC2PassengerBogie().execute();
     }
 }
