@@ -21,5 +21,11 @@ public class TrainApplication {
         new UC8StreamFiltering().execute();
         new UC9GroupingBy().execute();
         new UC10ReduceTotalSeats().execute();
+        
+        new UC11RegexValidation().execute();
+        new UC12SafetyCompliance().execute();
+        new UC13PerformanceBenchmark().execute();
+        new UC14CustomException().execute();
+        new UC15TryCatchFinally().execute();
     }
 }
