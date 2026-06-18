@@ -2,27 +2,27 @@ package com.train.model;
 
 public class GoodsBogie extends Bogie {
 
-    private String cargoType;
+    private String shape;
+
+    private String cargo;
 
     public GoodsBogie(
             String bogieId,
             String bogieName,
-            String cargoType) {
+            String shape,
+            String cargo) {
 
         super(bogieId, bogieName);
-        this.cargoType = cargoType;
+
+        this.shape = shape;
+        this.cargo = cargo;
     }
 
-    public String getCargoType() {
-        return cargoType;
+    public String getShape() {
+        return shape;
     }
 
-    @Override
-    public String toString() {
-        return getBogieId()
-                + " "
-                + getBogieName()
-                + " Cargo="
-                + cargoType;
+    public String getCargo() {
+        return cargo;
     }
 }

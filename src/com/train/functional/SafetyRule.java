@@ -1,5 +1,10 @@
 package com.train.functional;
 
-public class SafetyRule {
+import com.train.model.GoodsBogie;
 
+@FunctionalInterface
+public interface SafetyRule {
+
+    boolean validate(
+            GoodsBogie bogie);
 }
