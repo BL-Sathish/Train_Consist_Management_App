@@ -27,5 +27,10 @@ public class TrainApplication {
         new UC13PerformanceBenchmark().execute();
         new UC14CustomException().execute();
         new UC15TryCatchFinally().execute();
+        
+        new UC16BubbleSort().execute();
+        new UC17ArraysSort().execute();
+        new UC18LinearSearch().execute();
+        new UC19BinarySearch().execute();
     }
 }
