@@ -1,52 +1,24 @@
-package com.train.util;
+package com.train.usecase;
 
-public class SearchUtil {
+import com.train.util.SortUtil;
 
-    public static boolean linearSearch(
-            String[] ids,
-            String target) {
+import java.util.Arrays;
 
-        for (String id : ids) {
+public class UC17ArraysSort {
 
-            if (id.equals(target)) {
+    public void execute() {
 
-                return true;
-            }
-        }
+        String[] bogies = {
 
-        return false;
-    }
+                "Sleeper",
+                "AC",
+                "ChairCar",
+                "General"
+        };
 
-    public static boolean binarySearch(
-            String[] ids,
-            String target) {
+        SortUtil.sortNames(bogies);
 
-        int low = 0;
-
-        int high = ids.length - 1;
-
-        while (low <= high) {
-
-            int mid =
-                    (low + high) / 2;
-
-            int result =
-                    ids[mid].compareTo(target);
-
-            if (result == 0) {
-
-                return true;
-            }
-
-            if (result < 0) {
-
-                low = mid + 1;
-            } else {
-
-                high = mid - 1;
-            }
-        }
-
-        return false;
+        System.out.println(
+                Arrays.toString(bogies));
     }
 }
