@@ -1,5 +1,11 @@
 package com.train.exception;
 
-public class CargoSafetyException {
+public class CargoSafetyException
+        extends RuntimeException {
 
+    public CargoSafetyException(
+            String message) {
+
+        super(message);
+    }
 }
