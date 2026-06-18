@@ -11,5 +11,7 @@ public class TrainApplication {
         new UC2PassengerBogie().execute();
         
         new UC3HashSetBogie().execute();
+        
+        new UC4LinkedListBogie().execute();
     }
 }
