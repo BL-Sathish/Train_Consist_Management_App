@@ -12,7 +12,7 @@ public class UC2PassengerBogie {
         List<PassengerBogie> list =
                 new ArrayList<>();
 
-        list.add(
+      /*  list.add(
                 new PassengerBogie(
                         "P101",
                         "Sleeper",
@@ -22,7 +22,7 @@ public class UC2PassengerBogie {
                 new PassengerBogie(
                         "P102",
                         "AC Chair",
-                        60));
+                        60));*/
 
         list.forEach(System.out::println);
     }
