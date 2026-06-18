@@ -13,5 +13,7 @@ public class TrainApplication {
         new UC3HashSetBogie().execute();
         
         new UC4LinkedListBogie().execute();
+        
+        new UC5LinkedHashSetBogie().execute();
     }
 }
